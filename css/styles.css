@@ -44,7 +44,14 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+}
+
+.page-header {
     border-bottom: 1px solid #e7e9fc;
+}
+
+.header-logo {
+    padding: 24px 0;
 }
 
 .header-nav {
@@ -221,7 +228,7 @@ button {
 }
 
 .title-none {
-    display: none;
+    visibility: hidden;
 }
 
 .team-section {
@@ -240,7 +247,7 @@ button {
     text-transform: capitalize;
     color: #2e2f42;
     text-align: center;
-    margin-bottom: 8px
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -255,7 +262,6 @@ button {
     flex-basis: calc((100% - 3 * 24px) / 4);
     height: 380px;
     background: #ffffff;
-    width: 264px;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -265,7 +271,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin: 32px 58px 8px;
+    margin-bottom: 8px;
+    margin-top: 32px;
     text-align: center;
 }
 
