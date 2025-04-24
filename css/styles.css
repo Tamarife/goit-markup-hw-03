@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 .h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -32,6 +36,7 @@ button {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 /* header */
@@ -39,10 +44,12 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
- display: flex;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -109,7 +116,7 @@ button {
     color: #434455;
 }
 
-.wrapper {
+.wrapper-page {
     width: 1440px;
     height: 600px;
     margin: auto;
@@ -133,7 +140,7 @@ button {
     text-align: center;
     display: flex;
     justify-content: center;
-
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -143,10 +150,10 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    width: 496px;
     height: 120px;
+    max-width: 496px;
     margin-top: 320px;
-    margin: auto;
+        margin: auto;
 }
 
 .hero-btn {
@@ -159,11 +166,13 @@ button {
     background-color: #4d5ae5;
     border-radius: 4px;
     border: none;
+    display: block;
     padding: 16px;
-    width: 169px;
     height: 56px;
     margin-top: 48px;
     margin-bottom: 204px;
+    display: block;
+    min-width: 169px;
 }
 
 .hero-btn:hover,
@@ -173,24 +182,26 @@ button {
 }
 
 .page-section {
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 120px 0;
+
+}
+
+.item-container {
+    width: 264px;
+    height: 104px;
 }
 
 .page-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    flex-basis: calc((100% - 72px) / 3);
     width: 1128px;
     height: 104px;
-}
-
-
-.item-container {
-    width: 264px;
-    height: 104px;
+    gap: 24px;
 }
 
 .page-title {
@@ -198,9 +209,9 @@ button {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .page-text {
@@ -216,6 +227,9 @@ button {
 .team-section {
     background: #f4f4fd;
     padding-top: 120px;
+    width: 100%;
+    height: 732px;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -223,9 +237,10 @@ button {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     text-transform: capitalize;
-    color: #2e2f42
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px
 }
 
 .team-list {
@@ -237,9 +252,11 @@ button {
 .team-item {
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
-    width: 264px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
     height: 380px;
     background: #ffffff;
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title {
@@ -247,8 +264,9 @@ button {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2e2f42;
+    margin: 32px 58px 8px;
+    text-align: center;
 }
 
 .team-item-text {
@@ -259,9 +277,14 @@ button {
 }
 
 .portfolio {
+    margin: 192px 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-container {
     width: 1128px;
     height: 1000px;
-    margin: 192px 156px;
 }
 
 .portfolio-title {
@@ -279,14 +302,29 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
     align-items: center;
     margin-top: 180px;
     margin-bottom: 42px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
-    background-color: #FFFFFF
+    display: flex;
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    width: calc((100% - 48px) / 3);
+}
+
+.container-portfol-item {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .portfolio-title-list {
@@ -306,16 +344,14 @@ button {
 .footer {
     color: #f4f4fd; 
     background-color: #2e2f42;
-    width: 1440px;
+    width: 100%;
     height: 312px;
     padding-top: 100px;
     padding-bottom: 100px;
-
 }
 
 .logo-footer {
-    display: block;
-    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo-span {
@@ -329,5 +365,7 @@ button {
     color: #f4f4fd;
     width: 264px;
     height: 72px;
+    margin-top: 16px;
+    display: block; 
 }
 
