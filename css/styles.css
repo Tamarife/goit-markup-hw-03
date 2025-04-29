@@ -136,7 +136,6 @@ button {
 .hero-container {
     margin: auto;
     box-sizing: border-box;
-    padding: 356px 188px;
 }
 
 .hero-section {
@@ -176,7 +175,6 @@ button {
     padding: 16px;
     height: 56px;
     margin-top: 48px;
-    margin-bottom: 204px;
     display: block;
     min-width: 169px;
 }
@@ -185,14 +183,6 @@ button {
 .hero-btn:focus {
     background-color: #404BBF;
     font-style: normal;
-}
-
-.page-section {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -282,7 +272,6 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 32px;
     text-align: center;
 }
 
@@ -294,7 +283,6 @@ button {
 }
 
 .portfolio {
-    margin: 192px 156px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -315,14 +303,11 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 180px;
-    margin-bottom: 42px;
     column-gap: 24px;
     row-gap: 48px;
 }
 
 .portfolio-item {
-    display: flex;
     background-color: #FFFFFF;
     flex-wrap: wrap;
     width: calc((100% - 48px) / 3);
@@ -333,10 +318,7 @@ button {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
     border-top: none;
-    margin-bottom: 8px;
 }
 
 .portfolio-title-list {
@@ -376,10 +358,8 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
     color: #f4f4fd;
-    width: 264px;
-    height: 72px;
-    margin-top: 16px;
     display: block; 
 }
 
